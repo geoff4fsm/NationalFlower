@@ -61,7 +61,7 @@ class AndhraPradesh extends Region {
 public class NationalFlower {
     public static void main(String[] args) throws IOException {
         //BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String s = "AndhraPradesh";
+        String s = "Karnataka";
         Region region = null;
         switch (s) {
             case "WestBengal":
@@ -69,6 +69,9 @@ public class NationalFlower {
                 break;
             case "AndhraPradesh":
                 region = new AndhraPradesh();
+                break;
+            case "Karnataka":
+                region = new Karnataka();
                 break;
         }
         Flower flower = region.yourNationalFlower();
